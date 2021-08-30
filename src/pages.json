@@ -1,16 +1,298 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index/index",
+			"path": "pages/login_register/index",
 			"style": {
 				"navigationBarTitleText": "uni-app"
 			}
+		},
+		{
+			"path": "pages/login_register/main_tab",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		// {
+		// 	"path": "pages/login_register/index",
+		// 	"style": {
+		// 		"navigationBarTitleText": "uni-app"
+		// 	}
+		// },
+		{
+			//我的页面
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/five/five-sign",
+			"style": {
+				"navigationBarTitleText": "岗前五分钟",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/five/five-Select-process",
+			"style": {
+				"navigationBarTitleText": "作业工序",
+				"enablePullDownRefresh": false
+			}
+
+		}, 
+		{
+			"path": "pages/five/five-group-leader-sign",
+			"style": {
+				"navigationBarTitleText": "班组长签到",
+				"enablePullDownRefresh": false
+			}
+		
+		},
+		{
+			"path": "pages/five/five-history-report",
+			"style": {
+				"navigationBarTitleText": "历史上报",
+				"enablePullDownRefresh": true
+			}
+
+		},
+		{
+			"path": "pages/five/five-company-project-detail",
+			"style": {
+				"navigationBarTitleText": "历史上报",
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "pages/five/five-company-project",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/five/five-history-detail",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/five/five-history-sign",
+			"style": {
+				"navigationBarTitleText": "历史签到",
+				"enablePullDownRefresh": true
+			}
+
+		}, {
+			"path": "pages/five/five-chose-sign-person",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/login_register/register/qr_code",
+			"style": {
+				"navigationBarTitleText": "个人信息",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/notificatioin/index/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/worker_manager/worker-manager",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true
+			}
+
+		}, {
+			"path": "pages/illegal_record/illegal-record",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/illegal_record/illegal-list",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "pages/worker_manager/worker-exam",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/safe_data/safety-check-list",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/safe_data/safety-create-big-task",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
 		}
-	],
+	    ,{
+            "path" : "pages/safe_data/safety-create-personal-task",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/safe_data/safety-personal-log",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"subPackages": [{
+		"root": "pageA",
+		"pages": [{
+			"path": "cooperativeLogin",
+			"style": {
+				"navigationBarTitleText": "协作单位登录"
+			}
+		}, {
+			"path": "personalLogin",
+			"style": {
+				"navigationBarTitleText": "账号登录",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "register",
+			"style": {
+				"navigationBarTitleText": "个人信息",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "sign",
+			"style": {
+				"navigationBarTitleText": "手写签名",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "baseInfo",
+			"style": {
+				"navigationBarTitleText": "信息录入",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "workInfo",
+			"style": {
+				"navigationBarTitleText": "信息录入",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "materialInfo",
+			"style": {
+				"navigationBarTitleText": "信息录入",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "safeInformation",
+			"style": {
+				"navigationBarTitleText": "安全资料",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "announcementList",
+			"style": {
+				"navigationBarTitleText": "通知公告",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "announcementDetail",
+			"style": {
+				"navigationBarTitleText": "公告详情",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "updateInfo",
+			"style": {
+				"navigationBarTitleText": "资料详情",
+				"enablePullDownRefresh": false
+			}
+
+		}  
+            ]
+	}],
 	"globalStyle": {
+		"navigationStyle": "custom",
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
+	},
+	// "tabBar": {
+	// 	"color": "#B0B4BA",
+	// 	"selectedColor": "#414043",
+	// 	"backgroundColor":"white",
+	// 	"list": [{
+	// 			"pagePath": "pages/tabbar/home",
+	// 			"iconPath": "static/tabIcon/icon-home-default.png",
+	// 			"selectedIconPath": "static/tabIcon/icon-home-select.png",
+	// 			"text": "首页"
+	// 		},
+	// 		{
+	// 			"pagePath": "pages/tabbar/scanning",
+	// 			"iconPath": "static/tabIcon/icon-scan.png",
+	// 			"selectedIconPath": "static/tabIcon/icon-scan.png"
+	// 		},
+	// 		{
+	// 			"pagePath": "pages/tabbar/mine",
+	// 			"iconPath": "static/tabIcon/icon-mine-default.png",
+	// 			"selectedIconPath": "static/tabIcon/icon-mine-select.png",
+	// 			"text": "我的"
+	// 		}
+	// 	]
+	// },
+	"easycom": {
+		"autoscan": true, //是否自动扫描组件
+		"custom": { //自定义扫描规则
+			"five-(.*)": "@/components/five/five-$1.vue",
+			"custom-(.*)": "@/components/custom/custom-$1.vue",
+			"home-(.*)": "@/components/home/home-$1.vue",
+			"enter-(.*)": "@/components/enter/enter-$1.vue",
+			"safe-(.*)": "@/components/safe/safe-$1.vue",
+			"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+		}
 	}
 }

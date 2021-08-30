@@ -14,6 +14,8 @@
 
 /* 颜色变量 */
 
+@import 'uview-ui/theme.scss';
+
 /* 行为相关颜色 */
 $uni-color-primary: #007aff;
 $uni-color-success: #4cd964;
@@ -74,3 +76,157 @@ $uni-color-subtitle: #555555; // 二级标题颜色
 $uni-font-size-subtitle:36rpx;
 $uni-color-paragraph: #3F536E; // 文章段落颜色
 $uni-font-size-paragraph:30rpx;
+
+//常用字体尺寸
+$font_24:48upx;
+$font_22:44upx;
+$font_20:40upx;
+$font_18:36upx;
+$font_16:32upx;
+$font_14:28upx;
+$font_12:24upx;
+$font_10:20upx;
+$font_8:16upx;
+
+//常规颜色
+$white_color:#FFF;//白色
+$black_color:#000;//黑色
+
+
+//项目风格背景颜色
+$body_main_color:#fec106;//主题色
+$body_submain_color:#fe7d06;//主题辅助色
+$body_bg_color:#fff;//页面背景色
+$body_card_color:#f9f8f7;//卡片背景色
+$body_price_color:#f3382c;//价格颜色
+$body_success_color:#3ecd1a;//成功颜色
+
+
+//字体颜色
+$font_common_color:#444;//通用字体颜色
+$font_subcommon_color:#999;//辅助字体颜色
+$font_price_color:#FF4A64;//价格字体颜色
+$font_tags_color:#888;//标签未选中字体颜色
+$font_tagsActive_color:#333;//标签选中字体颜色
+
+
+$label_color:#7D7B89;
+$val_color:#414043;
+$label_size:30rpx;
+$font_family:Source Han Sans CN;
+$font_family_time:Google Sans;
+
+@mixin default-font-style {
+	font-size: $label_size;
+	font-family:$font_family;
+	font-weight: 500;
+	color: $val_color;
+}
+
+//页面左右边距
+@mixin body-lr-padding{
+	padding-left: 32rpx;
+	padding-right: 32rpx;
+}
+//盒子内边距
+@mixin box-padding{
+	padding: 32rpx 16rpx;
+}
+
+@mixin space-zero{
+	margin: 0;
+	padding: 0;
+}
+
+//间距值
+$space_8:16rpx;
+$space_9:18rpx;
+$space_11:22rpx;
+$space_13:26rpx;
+$space_14:28rpx;
+$space_16:32rpx;
+$space_24:48rpx;
+
+//通用圆角
+$radius_5:10rpx;
+$radius_8:16rpx;
+$radius_30:60rpx;
+
+
+
+// flex布局	
+@mixin flex-style($direction,$wrap,$content,$items){
+	display: flex;
+	flex-direction:$direction;
+	flex-wrap:$wrap;
+	justify-content:$content;
+	align-items:$items;
+}
+
+//grid布局
+@mixin grid-style($columns,$rows,$gap,$flow){
+	display: grid;
+	grid-template-columns: repeat($columns); /* 相当于 1fr 1fr 1fr */
+	grid-template-rows: repeat($rows); /* fr单位可以将容器分为几等份 */
+	grid-gap:$gap; /* grid-column-gap 和 grid-row-gap的简写 */
+	grid-auto-flow: $flow;
+}
+
+
+
+//boxsizing
+@mixin boxsizing{
+	box-sizing: border-box;
+}
+
+
+//单文本缩略
+@mixin single-text($width){
+	width: $width;
+	white-space: nowrap; 
+	overflow: hidden;
+	text-overflow:ellipsis; 
+}
+//多文本缩略
+@mixin multi-text ($height,$clamp){
+	-webkit-line-clamp:$clamp;
+	height: $height;
+	overflow: hidden; 
+	text-overflow: ellipsis; 
+}
+
+
+//1px边框
+@mixin border-after($color){
+	position: relative;
+	&:after{
+		position: absolute;
+		z-index: 10;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		height: 1px;
+		content: '';
+		-webkit-transform: scaleY(.5);
+		transform: scaleY(.5);
+		background-color: $color;
+	}
+}
+
+@mixin border-before {
+	position: relative;
+	&:before{
+		position: absolute;
+		z-index: 10;
+		right: 0;
+		top: 0;
+		left: 0;
+		height: 1px;
+		content: '';
+		-webkit-transform: scaleY(.5);
+		transform: scaleY(.5);
+		background-color: #c8c7cc
+	}
+}
+
+
